@@ -1,9 +1,21 @@
 body {
     padding-top: 50px;
+    background: #EFEFEF;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0) url(/logo.svg) repeat scroll 0 0 / 50px 50px;
 }
 
 .wrapper {
     padding-top: 30px;
+}
+
+.main {
+    background: #FFF;
+    padding: 10px 25px;
 }
 
 .footer {
@@ -14,21 +26,27 @@ body {
 
 .widget {
     background: #FEFEFE;
-    margin-bottom: 30px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
 }
 
 .widget .widget-title {
-    padding: 3px;
+    padding: 0;
+    border-bottom: 1px solid #EFEFEF;
 }
 
 .widget .widget-content {
-    padding: 3px;
+    padding: 10px 0;
 }
 
 .widget-content ul, .widget-content ol {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.widget-content ul ul {
+    margin-left: 15px;
 }
 
 .category-list-count, .tag-list-count, .archive-list-count {
@@ -45,52 +63,31 @@ body {
     content: ")";
 }
 
-.archives-wrap {
-    background: #FEFEFE;
-    padding-top: 10px;
-}
-
-.archives-wrap-title {
-    margin-left: 20px;
-    margin-top: 0;
-}
-
 .archives {
     padding: 10px;
-    margin-left: 30px;
-    border-left: 1px solid #EEE;
-}
-
-.archive-article {
-    padding: 0 20px;
 }
 
 .archive-article-date {
-    color: #939393;
-    font-size: 0.85em;
-    line-height: 1.5em;
-    width: 100px;
-}
-
-.archive-article h1 {
-    margin: 0;
-    padding: 0;
+    display: inline-block;
+    text-align: center;
+    float: left;
+    border-right: 1px solid #EFEFEF;
+    padding: 20px 20px 20px 10px;
 }
 
 .archive-article-title {
-    color: #111;
-    text-decoration: none;
-    font-size: 0.85em;
-    line-height: 1.5em;
-}
-
-.article-inner {
-    padding: 10px;
-    background: #FEFEFE;
-}
-
-.article-date {
+    display: block;
     float: left;
+    padding: 20px 10px 20px 20px;
+}
+
+.article-meta {
+    padding: 15px 0;
+    border-bottom: 1px dotted #EFEFEF;
+}
+
+.article-entry {
+    padding: 15px 0;
 }
 
 .article-category-link {
@@ -100,4 +97,22 @@ body {
 
 .article-category-link:first-child {
     margin-left: 0;
+}
+
+.pagination {
+    display: block;
+    text-align: center;
+}
+
+.pagination a, .pagination span {
+    display: inline-block;
+    padding: 5px 15px;
+    text-align: center;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background: #38b7ea;
+    color: #FFF;
 }
