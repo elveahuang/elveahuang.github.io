@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version='1.0'>
+    <dict>
+        <key>Label</key>
+        <string>cn.elvea.mongodb</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>/Users/elvea/Tools/mongodb/mongodb/bin/mongod</string>
+            <string>--dbpath</string>
+            <string>/Users/elvea/Tools/mongodb/data</string>
+            <string>--logpath</string>
+            <string>/Users/elvea/Tools/mongodb/log/mongo.log</string>
+        </array>
+        <key>RunAtLoad</key>
+        <true/>
+        <key>KeepAlive</key>
+        <true/>
+        <key>WorkingDirectory</key>
+        <string>/Users/elvea/Tools/mongodb/mongodb</string>
+        <key>StandardErrorPath</key>
+        <string>/Users/elvea/Tools/mongodb/log/output.log</string>
+        <key>StandardOutPath</key>
+        <string>/Users/elvea/Tools/mongodb/log/output.log</string>
+        <key>HardResourceLimits</key>
+        <dict>
+            <key>NumberOfFiles</key>
+            <integer>1024</integer>
+        </dict>
+        <key>SoftResourceLimits</key>
+        <dict>
+            <key>NumberOfFiles</key>
+            <integer>1024</integer>
+        </dict>
+    </dict>
+</plist>
