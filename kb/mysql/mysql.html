@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MySQL - 安装 | Elvea Huang</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="记录生活 & 记录技术">
+    
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.d2b7bda9.js" as="script"><link rel="preload" href="/assets/js/3.c8fd7b3d.js" as="script"><link rel="preload" href="/assets/js/2.a5b6d5b8.js" as="script"><link rel="preload" href="/assets/js/28.00faa28b.js" as="script"><link rel="prefetch" href="/assets/js/10.b72d2b9c.js"><link rel="prefetch" href="/assets/js/11.8183397f.js"><link rel="prefetch" href="/assets/js/12.513769f5.js"><link rel="prefetch" href="/assets/js/13.46a3187a.js"><link rel="prefetch" href="/assets/js/14.d29d9d38.js"><link rel="prefetch" href="/assets/js/15.66857995.js"><link rel="prefetch" href="/assets/js/16.21e6f3ce.js"><link rel="prefetch" href="/assets/js/17.df7988ab.js"><link rel="prefetch" href="/assets/js/18.3edb473d.js"><link rel="prefetch" href="/assets/js/19.ef9a0630.js"><link rel="prefetch" href="/assets/js/20.84edbe0a.js"><link rel="prefetch" href="/assets/js/21.14f12573.js"><link rel="prefetch" href="/assets/js/22.344968f1.js"><link rel="prefetch" href="/assets/js/23.14e378fa.js"><link rel="prefetch" href="/assets/js/24.90f93cf5.js"><link rel="prefetch" href="/assets/js/25.c5f3b244.js"><link rel="prefetch" href="/assets/js/26.becf9735.js"><link rel="prefetch" href="/assets/js/27.b2c1adc6.js"><link rel="prefetch" href="/assets/js/29.9bfac106.js"><link rel="prefetch" href="/assets/js/30.853ce64f.js"><link rel="prefetch" href="/assets/js/31.20705a44.js"><link rel="prefetch" href="/assets/js/32.710e3deb.js"><link rel="prefetch" href="/assets/js/33.e6431ee9.js"><link rel="prefetch" href="/assets/js/34.cafb599b.js"><link rel="prefetch" href="/assets/js/35.22db6817.js"><link rel="prefetch" href="/assets/js/36.adc146ca.js"><link rel="prefetch" href="/assets/js/37.81c9f2b9.js"><link rel="prefetch" href="/assets/js/38.a4e88d07.js"><link rel="prefetch" href="/assets/js/39.a751ff12.js"><link rel="prefetch" href="/assets/js/4.e45e9d83.js"><link rel="prefetch" href="/assets/js/40.ad5541f9.js"><link rel="prefetch" href="/assets/js/41.3207e19b.js"><link rel="prefetch" href="/assets/js/42.90ffb3a6.js"><link rel="prefetch" href="/assets/js/43.69c9a0f2.js"><link rel="prefetch" href="/assets/js/5.48a03a04.js"><link rel="prefetch" href="/assets/js/6.aabc56bf.js"><link rel="prefetch" href="/assets/js/7.4c7e87b0.js"><link rel="prefetch" href="/assets/js/8.22e70fb7.js"><link rel="prefetch" href="/assets/js/9.4b38919d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Elvea Huang</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/kb/" class="nav-link router-link-active">
+  知识库
+</a></div><div class="nav-item"><a href="/tech/" class="nav-link">
+  技术
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  随笔
+</a></div><div class="nav-item"><a href="https://github.com/elveahuang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/kb/" class="nav-link router-link-active">
+  知识库
+</a></div><div class="nav-item"><a href="/tech/" class="nav-link">
+  技术
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  随笔
+</a></div><div class="nav-item"><a href="https://github.com/elveahuang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>知识库</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kb/java.html" class="sidebar-link">Java</a></li><li><a href="/kb/nginx.html" class="sidebar-link">Nginx</a></li><li><a href="/kb/redis.html" class="sidebar-link">Redis</a></li><li><a href="/kb/rabbitmq.html" class="sidebar-link">RabbitMQ</a></li><li><a href="/kb/mongodb.html" class="sidebar-link">MongoDB</a></li><li><a href="/kb/php.html" class="sidebar-link">PHP</a></li><li><a href="/kb/node.html" class="sidebar-link">NodeJS</a></li><li><a href="/kb/ionic.html" class="sidebar-link">Ionic &amp; Hybrid App</a></li><li><a href="/kb/git.html" class="sidebar-link">Git</a></li><li><a href="/kb/docker.html" class="sidebar-link">Docker</a></li><li><a href="/kb/python.html" class="sidebar-link">Python</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Spring Cloud</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kb/spring-cloud/consul.html" class="sidebar-link">Consul</a></li><li><a href="/kb/spring-cloud/nacos.html" class="sidebar-link">Nacos</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>MySQL</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kb/mysql/mysql.html" aria-current="page" class="active sidebar-link">MySQL - 安装</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/kb/mysql/mysql.html#centos-安装" class="sidebar-link">CentOS - 安装</a></li><li class="sidebar-sub-header"><a href="/kb/mysql/mysql.html#macos-安装" class="sidebar-link">MacOS - 安装</a></li><li class="sidebar-sub-header"><a href="/kb/mysql/mysql.html#windows-安装" class="sidebar-link">Windows - 安装</a></li></ul></li><li><a href="/kb/mysql/mysql-master-slave.html" class="sidebar-link">MySQL - 主从复制</a></li><li><a href="/kb/mysql/mysql-tips.html" class="sidebar-link">MySQL - 常见问题</a></li><li><a href="/kb/mysql/mysql-config.html" class="sidebar-link">MySQL - 配置</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>OS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kb/os/centos.html" class="sidebar-link">Linux</a></li><li><a href="/kb/os/macos.html" class="sidebar-link">MacOS</a></li><li><a href="/kb/os/ubuntu.html" class="sidebar-link">Ubuntu</a></li><li><a href="/kb/os/windows.html" class="sidebar-link">Windows</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>文档在线预览</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kb/doc-libre-office.html" class="sidebar-link">LibreOffice</a></li><li><a href="/kb/doc-collabora-office.html" class="sidebar-link">Collabora Office</a></li><li><a href="/kb/doc-only-office.html" class="sidebar-link">OnlyOffice</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Elastic Stack</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kb/elastic-stack/elastic-centos.html" class="sidebar-link">Elastic Stack On CentOS</a></li><li><a href="/kb/elastic-stack/elastic-macos.html" class="sidebar-link">Elastic Stack On MacOS</a></li><li><a href="/kb/elastic-stack/elastic-windows.html" class="sidebar-link">ELK on Windows</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="mysql-安装"><a href="#mysql-安装" class="header-anchor">#</a> MySQL - 安装</h1> <h2 id="centos-安装"><a href="#centos-安装" class="header-anchor">#</a> CentOS - 安装</h2> <h3 id="_1-删除系统已安装包"><a href="#_1-删除系统已安装包" class="header-anchor">#</a> 1. 删除系统已安装包</h3> <blockquote><p>当前大部分的发行版都预装了mariadb或mysql, 安装前需要检查并移除已安装的包。</p></blockquote> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 删除预装的mysql相关包，如果存在的话。</span>
+<span class="token function">rpm</span> -qa <span class="token operator">|</span> <span class="token function">grep</span> mysql
+<span class="token function">rpm</span> -e --nodeps mysql-libs-5.1.73-8.el6_8.x86_64
+<span class="token function">rpm</span> -qa <span class="token operator">|</span> <span class="token function">grep</span> mysql
+<span class="token comment"># 删除预装的mariadb相关包，如果存在的话。</span>
+<span class="token function">rpm</span> -qa <span class="token operator">|</span> <span class="token function">grep</span> mariadb
+<span class="token function">rpm</span> -e --nodeps mariadb-libs-5.5.65-1.el7.x86_64
+<span class="token function">rpm</span> -qa <span class="token operator">|</span> <span class="token function">grep</span> mariadb
+</code></pre></div><h3 id="_2-安装"><a href="#_2-安装" class="header-anchor">#</a> 2. 安装</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># ----------------------------------------------------------------------------</span>
+<span class="token comment"># CentOS 7.x</span>
+<span class="token comment"># ----------------------------------------------------------------------------</span>
+<span class="token comment"># 解压缩</span>
+<span class="token function">tar</span> xvf mysql-8.0.24-1.el7.x86_64.rpm-bundle.tar
+<span class="token comment"># 安装</span>
+yum <span class="token function">install</span> mysql-community-common-8.0.24-1.el7.x86_64.rpm
+yum <span class="token function">install</span> mysql-community-libs-8.0.24-1.el7.x86_64.rpm
+yum <span class="token function">install</span> mysql-community-libs-compat-8.0.24-1.el7.x86_64.rpm
+yum <span class="token function">install</span> mysql-community-client-8.0.24-1.el7.x86_64.rpm
+yum <span class="token function">install</span> mysql-community-server-8.0.24-1.el7.x86_64.rpm
+<span class="token comment"># ----------------------------------------------------------------------------</span>
+<span class="token comment"># CentOS 8.x</span>
+<span class="token comment"># ----------------------------------------------------------------------------</span>
+<span class="token comment"># 解压缩</span>
+<span class="token function">tar</span> xvf mysql-8.0.24-1.el8.x86_64.rpm-bundle.tar
+<span class="token comment"># 安装</span>
+yum <span class="token function">install</span> mysql-community-common-8.0.24-1.el8.x86_64.rpm
+yum <span class="token function">install</span> mysql-community-libs-8.0.24-1.el8.x86_64.rpm
+yum <span class="token function">install</span> mysql-community-client-8.0.24-1.el8.x86_64.rpm
+yum <span class="token function">install</span> mysql-community-server-8.0.24-1.el8.x86_64.rpm
+</code></pre></div><h3 id="_3-初始密码"><a href="#_3-初始密码" class="header-anchor">#</a> 3. 初始密码</h3> <p>数据库启动初始化完成后，会生成一个临时的密码保存在/var/log/mysqld.log的日志文件里面。
+所以第一次登录时需要查到这个临时密码，并使用临时密码登录后修改初始密码。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 查找临时密码。</span>
+<span class="token function">grep</span> <span class="token string">'temporary password'</span> /var/log/mysqld.log
+</code></pre></div><p>获取到初始密码后可以通过<a href="/kb/mysql/mysql-tips.html">修改密码</a>来修改初始密码。</p> <h3 id="_4-系统服务"><a href="#_4-系统服务" class="header-anchor">#</a> 4. 系统服务</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 随系统启动</span>
+systemctl <span class="token builtin class-name">enable</span> mysqld.service
+<span class="token comment"># 禁用服务</span>
+systemctl disable mysqld.service
+<span class="token comment"># 启动服务</span>
+systemctl start mysqld.service
+<span class="token comment"># 停止服务</span>
+systemctl stop mysqld.service
+<span class="token comment"># 重启服务</span>
+systemctl restart mysqld.service
+<span class="token comment"># 查看状态</span>
+systemctl status mysqld.service
+</code></pre></div><h3 id="_5-卸载"><a href="#_5-卸载" class="header-anchor">#</a> 5. 卸载</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 查询已有安装包</span>
+<span class="token function">rpm</span> -qa<span class="token operator">|</span><span class="token function">grep</span> mysql
+<span class="token comment"># 删除已有安装包</span>
+<span class="token comment"># 8.0.x</span>
+<span class="token function">rpm</span> -e --nodeps mysql-community-common-8.0.24-1.el8.x86_64
+<span class="token function">rpm</span> -e --nodeps mysql-community-client-8.0.24-1.el8.x86_64
+<span class="token function">rpm</span> -e --nodeps mysql-community-server-8.0.24-1.el8.x86_64
+<span class="token function">rpm</span> -e --nodeps mysql-community-libs-8.0.24-1.el8.x86_64
+<span class="token comment"># 查询MySQL相关目录</span>
+<span class="token function">find</span> / -name mysql 
+<span class="token comment"># 删除相关目录</span>
+<span class="token function">rm</span> -rf /var/lib/mysql
+<span class="token function">rm</span> -rf /var/lib/mysql/mysql
+<span class="token function">rm</span> -rf /usr/share/mysql
+<span class="token function">rm</span> -rf /etc/selinux/targeted/active/modules/100/mysql
+<span class="token function">rm</span> -rf /etc/selinux/targeted/tmp/modules/100/mysql
+</code></pre></div><h2 id="macos-安装"><a href="#macos-安装" class="header-anchor">#</a> MacOS - 安装</h2> <h3 id="卸载"><a href="#卸载" class="header-anchor">#</a> 卸载</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">sudo</span> <span class="token function">rm</span> /usr/local/mysql
+<span class="token function">sudo</span> <span class="token function">rm</span> -rf /usr/local/mysql*
+<span class="token function">sudo</span> <span class="token function">rm</span> -rf /Library/StartupItems/MySQLCOM
+<span class="token function">sudo</span> <span class="token function">rm</span> -rf /Library/PreferencePanes/My*
+<span class="token function">sudo</span> <span class="token function">rm</span> -rf ~/Library/PreferencePanes/My*
+<span class="token function">sudo</span> <span class="token function">rm</span> -rf /Library/Receipts/mysql*
+<span class="token function">sudo</span> <span class="token function">rm</span> -rf /Library/Receipts/MySQL*
+<span class="token function">sudo</span> <span class="token function">rm</span> -rf /var/db/receipts/com.mysql.*
+</code></pre></div><h2 id="windows-安装"><a href="#windows-安装" class="header-anchor">#</a> Windows - 安装</h2> <p>安装目录说明</p> <div class="language- extra-class"><pre class="language-text"><code>|---D
+    |---Tools
+    |---|---MySQL             
+    |---|---|---Server                          (安装目录)
+    |---|---|---Data                            (数据目录)
+    |---|---|---Logs                            (日志目录)
+    |---|---|---|---mysql.log                   (运行日志)
+    |---|---|---|---mysql-slow.log              (慢查询日志)
+    |---|---|---my.ini                          (配置文件)
+</code></pre></div><p>操作命令</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 初始化数据库</span>
+mysqld --initialize-insecure --datadir<span class="token operator">=</span>D:<span class="token punctuation">\</span>Tools<span class="token punctuation">\</span>MySQL<span class="token punctuation">\</span>Data
+<span class="token comment"># 安装系统服务</span>
+mysqld --install MySQL --defaults-file<span class="token operator">=</span>D:<span class="token punctuation">\</span>Tools<span class="token punctuation">\</span>MySQL<span class="token punctuation">\</span>my.ini
+<span class="token comment"># 手工启动服务</span>
+mysqld --defaults-file<span class="token operator">=</span>D:<span class="token punctuation">\</span>Tools<span class="token punctuation">\</span>MySQL<span class="token punctuation">\</span>my.ini
+<span class="token comment"># 移除系统服务</span>
+mysqld –remove MySQL
+<span class="token comment"># 启动</span>
+net start MySQL
+<span class="token comment"># 停止</span>
+net stop MySQL
+</code></pre></div><p>参考配置文件</p> <div class="language- extra-class"><pre class="language-text"><code>[mysqld]
+# 端口
+port = 3306
+# 安装目录和数据目录
+basedir = D:\Tools\MySQL\Server
+datadir = D:\Tools\MySQL\Data
+# 表名不区分大小写
+lower_case_table_names = 1
+# 编码
+character-set-server = utf8mb4
+# 字符集
+collation-server = utf8mb4_0900_ai_ci
+#
+init_connect = 'SET NAMES utf8mb4'
+# 指定时区
+default-time-zone = '+8:00'
+# 启用传统密码策略认证
+default_authentication_plugin = mysql_native_password
+# 错误日志
+log-error = D:\Tools\MySQL\Logs\mysql.log
+# 慢查询
+# 开启慢查询日志
+slow-query-log = on
+# 慢查询日志路径
+slow_query_log_file = D:\Tools\MySQL\Logs\mysql-slow.log
+# 修改为记录5秒内的查询，默认为记录10秒内的查询
+long_query_time = 5
+# 记录未使用索引的查询
+log-queries-not-using-indexes = on
+[client]
+default-character-set = utf8mb4
+[mysql]
+default-character-set = utf8mb4
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/kb/spring-cloud/nacos.html" class="prev">
+        Nacos
+      </a></span> <span class="next"><a href="/kb/mysql/mysql-master-slave.html">
+        MySQL - 主从复制
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d2b7bda9.js" defer></script><script src="/assets/js/3.c8fd7b3d.js" defer></script><script src="/assets/js/2.a5b6d5b8.js" defer></script><script src="/assets/js/28.00faa28b.js" defer></script>
+  </body>
+</html>
