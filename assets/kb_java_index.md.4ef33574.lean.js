@@ -1,1 +1,0 @@
-import{_ as a,c as e,o as s,N as n}from"./chunks/framework.cd9250a1.js";const u=JSON.parse('{"title":"Java","description":"","frontmatter":{},"headers":[],"relativePath":"kb/java/index.md","lastUpdated":1679588476000}'),t={name:"kb/java/index.md"},l=n("",4),o=[l];function r(i,c,d,p,_,h){return s(),e("div",null,o)}const b=a(t,[["render",r]]);export{u as __pageData,b as default};
