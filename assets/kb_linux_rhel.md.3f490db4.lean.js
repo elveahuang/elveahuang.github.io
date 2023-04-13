@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,N as l}from"./chunks/framework.0799945b.js";const A=JSON.parse('{"title":"RHEL","description":"","frontmatter":{},"headers":[],"relativePath":"kb/linux/rhel.md","lastUpdated":1681388295000}'),p={name:"kb/linux/rhel.md"},e=l("",47),o=[e];function c(r,t,i,C,y,D){return n(),a("div",null,o)}const d=s(p,[["render",c]]);export{A as __pageData,d as default};
