@@ -1,0 +1,1 @@
+import{_ as a,o as e,c as t}from"./chunks/framework.33544f09.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"kb/java/jsp.md","filePath":"kb/java/jsp.md","lastUpdated":1695607049000}'),s={name:"kb/java/jsp.md"};function r(o,p,c,n,d,_){return e(),t("div")}const f=a(s,[["render",r]]);export{m as __pageData,f as default};
